@@ -1,0 +1,28 @@
+程序名称：滴滴出行模拟器
+程序编写环境：Qt Creator 4.8.0 (Enterprise)
+当前迭代版本：3.7.4
+
+程序运行提示：
+1.用户名及密码见 My-qt/two/users.txt；
+
+2.程序中.jpg  .gif能够正常显示,存放于picture_cub文件夹中；
+
+3.由于读取文档应使用绝对路径，如果需要进行相关操作请按说明拷贝相应文件夹和.txt文本文档到D盘；
+
+(！！！！一定要将My_qt文件夹拷贝到D盘！！！！)
+(！！！！一定要将My_qt文件夹拷贝到D盘！！！！)
+附：包含的文件：
+①D:/My-qt/two/users.txt；
+②D:/My-qt/two/now_user.txt；
+③D:/My-qt/two/sun.txt;
+④D:/My-qt/two/chen.txt；
+⑤D:/My-qt/two/zhang.txt；
+
+4.司机的用户名---孙师傅---p1     陈师傅---p2      张师傅---p3；
+
+5.完成上述系列操作后，直接运行two.exe即可。
+
+
+
+
+

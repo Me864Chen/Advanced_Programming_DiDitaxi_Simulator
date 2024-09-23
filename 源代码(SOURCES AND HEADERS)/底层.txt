@@ -1,0 +1,83 @@
+#-------------------------------------------------
+#
+# Project created by QtCreator 2024-05-15T22:10:21
+#
+#-------------------------------------------------
+
+QT       += core gui sql
+
+    #程序版本
+    VERSION = 3.7.4
+    #程序图标
+    RC_ICONS = two.ico
+    #公司名称
+    QMAKE_TARGET_COMPANY ="中南大学自动化学院"
+    #程序说明
+    QMAKE_TARGET_DESCRIPTION = Qt Creator based on Qt 4.8.0(Enterprise)
+    #版权信息
+    QMAKE_TARGET_COPYRIGHT = "Copyright(C) 智能2301陈思危"
+    #程序名称
+    QMAKE_TARGET_PRODUCT = "DiDi Simulation System"
+    #程序语言
+    #0x0800代表和系统当前语言一致 中文(简体)支持
+    RC_LANG = 0x0804
+
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = two
+TEMPLATE = app
+
+# The following define makes your compiler emit warnings if you use
+# any feature of Qt which has been marked as deprecated (the exact warnings
+# depend on your compiler). Please consult the documentation of the
+# deprecated API in order to know how to port your code away from it.
+DEFINES += QT_DEPRECATED_WARNINGS
+
+# You can also make your code fail to compile if you use deprecated APIs.
+# In order to do so, uncomment the following line.
+# You can also select to disable deprecated APIs only up to a certain version of Qt.
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+
+CONFIG += c++11
+
+SOURCES += \
+        main.cpp \
+        widget_start.cpp \
+    widget_log.cpp \
+    widget_sign.cpp \
+    window_passenger.cpp \
+    window_driver.cpp \
+    window_taxi.cpp \
+    window_person.cpp \
+    window_driver_own.cpp \
+    com_function.cpp
+
+HEADERS += \
+        widget_start.h \
+    widget_log.h \
+    user.h \
+    widget_sign.h \
+    window_passenger.h \
+    window_driver.h \
+    window_taxi.h \
+    window_person.h \
+    window_driver_own.h
+
+FORMS += \
+        widget_start.ui \
+    widget_log.ui \
+    widget_sign.ui \
+    window_passenger.ui \
+    window_driver.ui \
+    window_taxi.ui \
+    window_person.ui \
+    window_driver_own.ui
+
+# Default rules for deployment.
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /opt/$${TARGET}/bin
+!isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    picture.qrc
